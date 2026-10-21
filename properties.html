@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Properties | Silicon City Properties</title>
+<meta name="description" content="All properties by Silicon City Properties, Bengaluru: apartments and villas with prices, configurations and availability.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0e0818;--plum:#1a1030;--maroon:#6b1730;--maroon2:#8e2342;--gold:#c9a24b;--gold2:#ecd593;--ivory:#fbf7ee;--cream:#f3ecdc;--ink:#241a33;--muted:#766c83;--line:#e7dcc3;--green:#1f8a5b;--goldgrad:linear-gradient(135deg,#f2dfa4,#c9a24b 55%,#a98332)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:'Jost',sans-serif;background:var(--ivory);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.header{position:sticky;top:0;z-index:20;background:#0e0818ee;backdrop-filter:blur(14px);border-bottom:1px solid #c9a24b44}
+.headinner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:70px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.crest{width:38px;height:38px;display:grid;place-items:center;background:var(--goldgrad);color:var(--night);font-family:'Cinzel',serif;font-weight:700;font-size:20px}
+.brandname{font-family:'Cinzel',serif;font-size:14px;letter-spacing:2px;line-height:1.2}
+.brandname small{display:block;font-family:'Jost';font-size:9px;letter-spacing:3px;color:var(--gold2);text-transform:uppercase;margin-top:2px}
+.btn{border:0;cursor:pointer;padding:14px 24px;font-size:11px;letter-spacing:2.2px;text-transform:uppercase;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:9px;transition:transform .3s,box-shadow .3s,background .3s,color .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--goldgrad);color:var(--night)}
+.btn-maroon{background:var(--maroon);color:#fff}.btn-maroon:hover{background:var(--maroon2)}
+.btn-line{background:#fff;color:var(--ink);border:1px solid var(--line)}.btn-line:hover{border-color:var(--gold)}
+.crumbs{padding:22px 0 0;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.crumbs a:hover{color:var(--maroon)}
+.hero{position:relative;margin-top:16px;aspect-ratio:16/7;min-height:260px;background:var(--plum);overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,#0e0818cc)}
+.badges{position:absolute;left:20px;top:20px;z-index:2;display:flex;gap:8px;flex-wrap:wrap}
+.badge{background:#fff;color:var(--ink);font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:600;padding:8px 14px}
+.badge.stage{background:var(--maroon);color:#fff}
+.main{display:grid;grid-template-columns:1fr 360px;gap:40px;padding:44px 0 70px;align-items:start}
+.eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--maroon);font-weight:600}
+h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(34px,5vw,54px);line-height:1.05;margin:10px 0 8px}
+.location{color:var(--muted);font-size:15px;letter-spacing:.5px}
+.price{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;color:var(--maroon);margin:18px 0 4px}
+.note{font-size:12px;color:var(--muted);margin:0 0 26px}
+h2{font-family:'Cormorant Garamond',serif;font-size:28px;margin:34px 0 14px}
+.about{color:var(--muted);line-height:1.9;font-weight:300;font-size:16px;margin:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.facts div{background:#fff;padding:18px 20px}
+.facts span{display:block;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.facts b{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600}
+.side{position:sticky;top:90px;background:#fff;border:1px solid var(--line);padding:28px;box-shadow:0 20px 50px #241a3314}
+.side h3{font-family:'Cormorant Garamond',serif;font-size:26px;margin:0 0 6px}
+.side p{color:var(--muted);font-size:14px;line-height:1.7;margin:0 0 18px;font-weight:300}
+.f{margin-bottom:14px}
+.f label{display:block;font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.f input,.f textarea{width:100%;border:1px solid var(--line);background:var(--ivory);padding:12px 14px;outline:0}
+.f input:focus,.f textarea:focus{border-color:var(--gold)}
+.side .btn{width:100%}
+.others{background:var(--cream);padding:54px 0 64px;border-top:1px solid var(--line)}
+.others h2{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.mini{background:#fff;border:1px solid var(--line);display:block;transition:transform .3s,box-shadow .3s}
+.mini:hover{transform:translateY(-4px);box-shadow:0 16px 36px #241a3320}
+.mini img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--plum)}
+.mini div{padding:14px 16px}.mini b{font-family:'Cormorant Garamond',serif;font-size:20px;display:block}
+.mini small{color:var(--muted);font-size:12px}
+footer{background:var(--night);color:#b9afc9;text-align:center;padding:30px 20px;font-size:13px;line-height:1.8}
+footer a{color:var(--gold2)}
+@media(max-width:860px){.main{grid-template-columns:1fr}.side{position:static}.hero{aspect-ratio:4/3}.header .btn{padding:12px 16px}.brandname small{display:none}}
+.listhead{padding:46px 0 10px}
+.listhead h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(34px,5vw,54px);line-height:1.05;margin:10px 0 8px}
+.listhead p{color:var(--muted);margin:0;line-height:1.8;font-weight:300}
+.listgrid{padding:26px 0 70px}
+.mini .price{font-size:20px;margin:6px 0 0}
+
+</style></head>
+<body>
+<header class="header"><div class="wrap headinner">
+<a class="brand" href="index.html"><span class="crest">S</span><span class="brandname">Silicon City Properties<small>Properties of Distinction</small></span></a>
+<button class="btn btn-gold" type="button" id="bookTop" hidden>Book a Visit</button></div></header>
+
+<main id="app"></main>
+
+<footer>Silicon City Properties · <a href="mailto:hello@siliconcityproperties.in">hello@siliconcityproperties.in</a><br>Kindly verify pricing, availability and project approvals directly before reaching a decision.</footer>
+
+<script>
+/* ALL properties live in this one file.
+   Each one has its own address:  properties.html#dsr-evoq , properties.html#silver-horizon ...
+   To add or edit a property, change the list below. */
+var DATA = [
+ {
+  "slug": "dsr-evoq",
+  "name": "DSR Evoq",
+  "type": "Apartment",
+  "city": "Bengaluru",
+  "area": "Whitefield",
+  "stage": "Under construction",
+  "price": "₹1.83 Cr – ₹2.76 Cr",
+  "about": "2, 3 & 4 BHK · 7.8 acres",
+  "config": "2, 3, 4 BHK",
+  "size": "On request",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=85"
+ },
+ {
+  "slug": "century-kindle",
+  "name": "Century Kindle",
+  "type": "Apartment",
+  "city": "Bengaluru",
+  "area": "Yelahanka New Town",
+  "stage": "Under construction",
+  "price": "Price on request",
+  "about": "Now launching · Yelahanka New Town",
+  "config": "On request",
+  "size": "On request",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
+ },
+ {
+  "slug": "mahindra-blossom",
+  "name": "Mahindra Blossom",
+  "type": "Apartment",
+  "city": "Bengaluru",
+  "area": "Hopefarm Channasandra",
+  "stage": "Under construction",
+  "price": "From ₹3.4 Cr",
+  "about": "3.5 & 4 BHK · 2,175 – 2,450 sq.ft",
+  "config": "3.5, 4 BHK",
+  "size": "2,175–2,450 sq.ft",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=85"
+ },
+ {
+  "slug": "skanda-aura",
+  "name": "Skanda Aura",
+  "type": "Apartment",
+  "city": "Bengaluru",
+  "area": "IVC Road, Devanahalli",
+  "stage": "Ready to move in",
+  "price": "From ₹67 L",
+  "about": "2, 2.5 & 3 BHK · from ₹67 L*",
+  "config": "2, 2.5, 3 BHK",
+  "size": "On request",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=85"
+ },
+ {
+  "slug": "terra-alegria",
+  "name": "Terra Alegria",
+  "type": "Villa",
+  "city": "Bengaluru",
+  "area": "Shankanipura, Hoskote",
+  "stage": "Ready to move in",
+  "price": "Price on request",
+  "about": "3 & 4 BHK · 1,592 – 2,692 sq.ft",
+  "config": "3, 4 BHK",
+  "size": "1,592–2,692 sq.ft",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=85"
+ },
+ {
+  "slug": "sampoojitha-heights",
+  "name": "Sampoojitha Heights",
+  "type": "Apartment",
+  "city": "Bengaluru",
+  "area": "Belathur, K R Puram",
+  "stage": "Ready to move in",
+  "price": "₹89.31 L – ₹1.4 Cr",
+  "about": "2 & 3 BHK · 1,145 – 1,795 sq.ft",
+  "config": "2, 3 BHK",
+  "size": "1,145–1,795 sq.ft",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
+ },
+ {
+  "slug": "silver-horizon",
+  "name": "Silver Horizon",
+  "type": "Apartment",
+  "city": "Bengaluru",
+  "area": "Kannamangala, Bengaluru East",
+  "stage": "Under construction",
+  "price": "Price on request",
+  "about": "3 & 4 BHK · 32 storeys",
+  "config": "3, 4 BHK",
+  "size": "On request",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=85"
+ },
+ {
+  "slug": "urbanrise",
+  "name": "Urbanrise",
+  "type": "Apartment",
+  "city": "Bengaluru",
+  "area": "Gattahalli",
+  "stage": "Pre launch",
+  "price": "Price on request",
+  "about": "Pre-launch · 3, 3.5 & 4 BHK",
+  "config": "3, 3.5, 4 BHK",
+  "size": "On request",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=85"
+ },
+ {
+  "slug": "gardens-of-quiet-moments",
+  "name": "Gardens of Quiet Moments",
+  "type": "Apartment",
+  "city": "Bengaluru",
+  "area": "Hennur Road, North Bengaluru",
+  "stage": "Pre launch",
+  "price": "Price on request",
+  "about": "2, 2.5, 3 & 3.5 BHK · EOI open",
+  "config": "2, 2.5, 3, 3.5 BHK",
+  "size": "On request",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=85"
+ },
+ {
+  "slug": "vikyath-signature",
+  "name": "Vikyath Signature",
+  "type": "Apartment",
+  "city": "Bengaluru",
+  "area": "Belathur Main Road, KR Puram",
+  "stage": "Ready to move in",
+  "price": "₹1.1 Cr – ₹2.5 Cr",
+  "about": "2, 2.5 & 3 BHK · ₹1.1 Cr – ₹2.5 Cr",
+  "config": "2, 2.5, 3 BHK",
+  "size": "On request",
+  "status": "Available",
+  "fallback": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
+ }
+];
+
+var app = document.getElementById('app'), bookTop = document.getElementById('bookTop');
+var baseTitle = 'Properties | Silicon City Properties';
+
+function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function img(p, lazy){
+  return '<img src="gallery/projects/' + esc(p.slug) + '.jpg" alt="' + esc(p.name) + '"' + (lazy ? ' loading="lazy"' : '') +
+    ' onerror="this.onerror=null;this.src=\'' + esc(p.fallback) + '\'">';
+}
+function mini(p){
+  return '<a class="mini" href="#' + esc(p.slug) + '">' + img(p, true) +
+    '<div><b>' + esc(p.name) + '</b><small>' + esc(p.area) + ', ' + esc(p.city) + '</small></div></a>';
+}
+
+function detail(p){
+  var others = DATA.filter(function(x){ return x.slug !== p.slug; });
+  return '' +
+  '<div class="wrap">' +
+    '<div class="crumbs"><a href="index.html#properties">← All Properties</a> &nbsp;/&nbsp; ' + esc(p.name) + '</div>' +
+    '<div class="hero"><div class="badges"><span class="badge">' + esc(p.type) + '</span><span class="badge stage">' + esc(p.stage) + '</span></div>' + img(p, false) + '</div>' +
+    '<div class="main"><div>' +
+      '<div class="eyebrow">' + esc(p.type) + ' · ' + esc(p.city) + '</div>' +
+      '<h1>' + esc(p.name) + '</h1><div class="location">⌖ ' + esc(p.area) + ', ' + esc(p.city) + '</div>' +
+      '<div class="price">' + esc(p.price) + '</div><p class="note">*Kindly confirm the final price and availability with our Team.</p>' +
+      '<h2>About this Property</h2><p class="about">' + esc(p.about) + '</p>' +
+      '<h2>Key details</h2><div class="facts">' +
+        '<div><span>Type</span><b>' + esc(p.type) + '</b></div>' +
+        '<div><span>Configuration</span><b>' + esc(p.config) + '</b></div>' +
+        '<div><span>Area</span><b>' + esc(p.size) + '</b></div>' +
+        '<div><span>Stage</span><b>' + esc(p.stage) + '</b></div>' +
+        '<div><span>Locality</span><b>' + esc(p.area) + '</b></div>' +
+        '<div><span>City</span><b>' + esc(p.city) + '</b></div>' +
+        '<div><span>Availability</span><b>' + esc(p.status) + '</b></div>' +
+      '</div>' +
+    '</div>' +
+    '<aside class="side" id="enquire"><h3>Book a Visit</h3><p>Leave your details and our Team shall attend to you regarding ' + esc(p.name) + '.</p>' +
+      '<form id="f"><div class="f"><label for="n">Your name</label><input id="n" required autocomplete="name"></div>' +
+      '<div class="f"><label for="ph">Phone</label><input id="ph" type="tel" required inputmode="tel" autocomplete="tel"></div>' +
+      '<div class="f"><label for="m">Message (optional)</label><textarea id="m" rows="3"></textarea></div>' +
+      '<button class="btn btn-maroon" type="submit">Send Enquiry</button></form></aside>' +
+    '</div>' +
+  '</div>' +
+  '<section class="others"><div class="wrap"><h2>Other estates</h2><div class="grid">' + others.map(mini).join('') + '</div></div></section>';
+}
+
+function list(){
+  return '<div class="wrap"><div class="crumbs"><a href="index.html">← Home</a> &nbsp;/&nbsp; Properties</div>' +
+    '<div class="listhead"><div class="eyebrow">Our collection</div><h1>All Properties</h1><p>' + DATA.length + ' residences across Bengaluru. Select one to see its full details.</p></div>' +
+    '<div class="listgrid"><div class="grid">' + DATA.map(function(p){
+      return '<a class="mini" href="#' + esc(p.slug) + '">' + img(p, true) + '<div><b>' + esc(p.name) + '</b><small>' + esc(p.area) + ', ' + esc(p.city) + '</small><div class="price">' + esc(p.price) + '</div></div></a>';
+    }).join('') + '</div></div></div>';
+}
+
+var current = null;
+function route(){
+  var id = ''; try { id = decodeURIComponent(location.hash.slice(1)); } catch (e) {}
+  current = DATA.filter(function(x){ return x.slug === id; })[0] || null;
+  app.innerHTML = current ? detail(current) : list();
+  bookTop.hidden = !current;
+  document.title = current ? current.name + ' | ' + current.area + ', ' + current.city + ' | Silicon City Properties' : baseTitle;
+  window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', route);
+route();
+
+/* the "Book a Visit" button in the header jumps to the enquiry form */
+bookTop.addEventListener('click', function(){
+  var box = document.getElementById('enquire');
+  if (box) { box.scrollIntoView({ behavior: 'smooth', block: 'center' }); setTimeout(function(){ var n = document.getElementById('n'); if (n) n.focus({ preventScroll: true }); }, 500); }
+});
+
+/* enquiry form: opens the visitor's email app addressed to us */
+document.addEventListener('submit', function(e){
+  if (e.target.id !== 'f' || !current) return;
+  e.preventDefault();
+  var n = document.getElementById('n').value.trim(), ph = document.getElementById('ph').value.trim(), m = document.getElementById('m').value.trim();
+  var body = 'Name: ' + n + '\nPhone: ' + ph + '\nEstate: ' + current.name + ' (' + current.area + ', ' + current.city + ')' + (m ? '\n\n' + m : '');
+  location.href = 'mailto:hello@siliconcityproperties.in?subject=' + encodeURIComponent('Property enquiry: ' + current.name) + '&body=' + encodeURIComponent(body);
+});
+</script></body></html>
